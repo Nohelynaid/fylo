@@ -1,0 +1,236 @@
+html, body {
+    height: 100%;
+  }
+  
+
+
+body{
+    margin: 0;;
+    background-color: hsl(229, 57%, 11%);
+    background-image: url(../images/bg-desktop.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size:100% 25vw;/*this changes th height and width of the bg image as 100% of the width of the screen 
+    and 20% the height of the screen or viewport*/
+    font-family: 'Raleway', sans-serif;
+}
+
+/*MAIN SECTION*/
+main{
+    width:100%;
+    max-width:1440px;
+}
+
+.container{
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:14%;
+   
+}
+
+/*FYLO CONTAINER*/
+
+.fylo{
+    
+    width: 300px;
+    height:160px;
+    background-color: hsl(228, 56%, 26%);
+    border-radius:  0.5rem 4rem 0.5rem 0.5rem;
+    margin-right:1.5rem;
+    margin-top: 15px;
+
+}
+
+.logo-text{
+    margin:38px 0 10px 10px;
+    
+}
+
+.icons{
+    background-color: hsl(229, 57%, 11%);
+    width:38px;
+    height:38px;
+    border-radius: 0.5rem;
+    margin: 8px
+}
+
+.icon-1{
+    margin-left:20px;
+}
+
+.icon-container{
+    display: flex;
+    justify-content:flex-start;
+    align-items:left;
+}
+
+
+
+
+/*STORAGE CONTAINER*/
+
+
+.storage{
+    width:450px;
+    height:130px;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 0.5rem;
+    margin-top:3rem;
+    font-size:12px ;
+    font-weight: 400;    
+}
+
+
+
+.storage-text{
+    padding:0px 28px 0px 15px;
+    position: relative;
+    bottom: 15px;
+}
+
+.flex, .gb{
+    color:hsl(243, 100%, 93%);
+}
+
+.info{
+    color:rgb(221, 219, 255, 0.5);
+}
+
+.gb{
+    font-weight: 700;
+}
+
+
+.divider{
+    height:15px;
+    background-color: 	rgba(12, 18, 44, 0.5);
+    border-radius: 0.5rem;
+    text-align: center bottom;
+    padding: 2px 3px;
+    margin:8px 0 3px;
+    
+}
+
+.load-div{
+    width:75%;
+    height:10px;
+    border-radius: 0.5rem;
+    background: linear-gradient(to left,  hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    padding: 1px 0 2px 0;
+
+}
+
+.circle-div{
+    background-color:hsl(243, 100%, 93%) ;
+    width:8px;
+    height:8px;
+    border-radius: 50%;
+    margin-left:97%
+}
+
+/*GB CONTAINER*/
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    
+    }
+    
+
+.storage-left{
+    text-align: center;
+    background-color: hsl(243, 100%, 93%);
+    height:25%;
+    width:25%;
+    padding: 32px 18px 15px;
+    border-radius: 0.5rem 0.5rem 0 0.5rem;
+    position: relative;
+    left: 62%;
+    bottom: 20%;
+    font-weight: 700;
+    color:hsl(229, 7%, 55%);
+   
+    
+}
+
+.storage-left:before {
+        content: "";
+        position: absolute;
+        top: 58px;
+        left: 104px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 20px 20px;
+        border-color: transparent transparent hsl(243, 100%, 93%) transparent;
+        transform: rotate(-90deg); /* rotate the element */
+    transform-origin: 100% 0; /* set the transform origin */
+    }
+
+.gb-left{
+    font-size: 10px;
+    position: relative;
+    bottom:8px;
+}
+
+
+.gb-number{
+    color:hsl(229, 57%, 11%);
+    font-weight: 700;
+    font-size: 35px;
+    margin-right: 10px;
+
+}
+
+
+.gb-left{
+    font-weight: 800;
+}
+
+.attribution{
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+@media (max-width: 767px) {
+
+    body{
+        background-image: url(../images/bg-mobile.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .row > * {
+      flex-shrink: 0;
+      width:100%;
+      max-width: 90%;
+      align-items: center;
+      margin-left: 30px;
+    }
+
+  
+    .storage{
+        margin-right:30px;
+        margin-top: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+        text-align: center;
+        height: 140px;
+    }
+
+    .storage-left:before {
+        display: none;
+        border-radius: 0.5rem;
+    }
+
+    .storage-left{
+        border-radius: 0.5rem;
+        position: relative;
+        top: 80%;
+        left:0;
+
+    }
+}
